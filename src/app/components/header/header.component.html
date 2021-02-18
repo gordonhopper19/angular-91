@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" layout="fill">
+  {{ title }}
+  <span class="fill-space"></span>
+  <!-- cant find mat-slide-toggle in Angular 9 -->
+  <mat-slide-toggle color="accent" (change)="onThemeChange($event)">
+    Dark Theme
+  </mat-slide-toggle>
+</mat-toolbar>
+<div>
+  <p style="text-align: center">
+    This demo is using Angular <b>{{ angularVersion }}</b> & Material<b
+      >{{ materialVersion }}</b
+    >. <br />
+    Feel free to reuse this solution template for StackOverflow questions
+  </p>
+</div>

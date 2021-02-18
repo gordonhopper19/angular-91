@@ -1,0 +1,8 @@
+<div id="solution">
+	<mat-form-field appearance="fill">
+		<mat-label>Expiration Date</mat-label>
+		<input matInput [matDatepicker]="dp" [formControl]="date" />
+		<mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+		<mat-datepicker #dp></mat-datepicker>
+	</mat-form-field>
+</div>

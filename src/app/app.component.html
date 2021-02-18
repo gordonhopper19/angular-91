@@ -1,0 +1,16 @@
+<div class="container" [class.solution-dark-theme]="isDarkThemeActive">
+  <div
+    fxLayout="column"
+    fxLayout.xs="column"
+    fxLayoutAlign="space-around stretch"
+    fxFill
+  >
+    <solution-header
+      [angularVersion]="ngVersion"
+      [materialVersion]="matVersion"
+    >
+    </solution-header>
+    <stackoverflow-solution></stackoverflow-solution>
+    <solution-footer></solution-footer>
+  </div>
+</div>
